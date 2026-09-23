@@ -314,7 +314,7 @@ body {
 }
 
 /* ==========================================
-   5. SECTION BERITA
+   SECTION BERITA (FIXED FOR MOBILE & DESKTOP)
    ========================================== */
 
 .section-berita {
@@ -325,50 +325,33 @@ body {
 
 .section-berita-judul {
     text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-berita-judul h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #0f172a;
-    margin-bottom: 8px;
-}
-
-.section-berita-judul p {
-    color: #64748b;
-    font-size: 1rem;
+    margin-bottom: 30px;
 }
 
 .container-card-berita {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
+/* KARTU BERITA */
 .card-berita {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    width: 380px; /* Di-pas-in ukurannya biar gak terlalu kaku */
-    min-height: 420px;
-    border: 1px solid #e2e8f0; /* Ganti border hitam tebal jadi abu-abu halus khas UI modern */
-    border-radius: 16px;
-    overflow: hidden; /* Biar gambarnya gak meluber dari border-radius */
+    width: 380px;
+    max-width: 100%; /* BIAR GAK MELUBER DI HP */
+    min-height: 270px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-berita:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
 .card-berita-gambar {
     width: 100%;
     height: 200px;
-    background-color: #0f172a;
 }
 
 .card-berita-gambar img {
@@ -378,52 +361,48 @@ body {
 }
 
 .card-berita-judul-artikel {
-    padding: 20px 20px 8px 20px;
+    padding: 16px 16px 8px;
+    text-align: center;
 }
 
 .card-berita-judul-artikel h2 {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.15rem;
     color: #0f172a;
-    text-align: left; /* Rata kiri lebih pas buat judul artikel */
 }
 
 .card-berita-content {
-    padding: 0 20px 20px 20px;
-    text-align: left;
+    padding: 0 16px 16px;
+    text-align: justify;
 }
 
 .card-berita-content p {
-    color: #64748b;
     font-size: 0.9rem;
-    line-height: 1.6;
+    color: #64748b;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Cukup 3 baris ringkasan */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
+/* TOMBOL SELENGKAPNYA (FIXED) */
 .btn-card-berita {
-    margin-top: auto; /* Mendorong tombol ke posisi paling bawah */
-    padding: 0 20px 20px 20px;
+    margin-top: auto;
+    padding: 0 16px 16px;
     display: flex;
-    justify-content: flex-end; /* Tombol rata kanan */
+    justify-content: flex-end;
 }
 
 .btn-card-berita a {
-    display: inline-block;
-    background-color: #0f172a;
-    color: #ffffff;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    display: inline-block !important;
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
 }
 
 .btn-card-berita a:hover {
-    background-color: #2563eb;
-    transform: translateY(-2px);
+    background-color: #2563eb !important;
 }
-
