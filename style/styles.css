@@ -312,3 +312,118 @@ body {
     color: #ffffff;
     font-weight: 700;
 }
+
+/* ==========================================
+   5. SECTION BERITA
+   ========================================== */
+
+.section-berita {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+.section-berita-judul {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-berita-judul h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.section-berita-judul p {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+.container-card-berita {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.card-berita {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 380px; /* Di-pas-in ukurannya biar gak terlalu kaku */
+    min-height: 420px;
+    border: 1px solid #e2e8f0; /* Ganti border hitam tebal jadi abu-abu halus khas UI modern */
+    border-radius: 16px;
+    overflow: hidden; /* Biar gambarnya gak meluber dari border-radius */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-berita:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-berita-gambar {
+    width: 100%;
+    height: 200px;
+    background-color: #0f172a;
+}
+
+.card-berita-gambar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-berita-judul-artikel {
+    padding: 20px 20px 8px 20px;
+}
+
+.card-berita-judul-artikel h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    text-align: left; /* Rata kiri lebih pas buat judul artikel */
+}
+
+.card-berita-content {
+    padding: 0 20px 20px 20px;
+    text-align: left;
+}
+
+.card-berita-content p {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Cukup 3 baris ringkasan */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btn-card-berita {
+    margin-top: auto; /* Mendorong tombol ke posisi paling bawah */
+    padding: 0 20px 20px 20px;
+    display: flex;
+    justify-content: flex-end; /* Tombol rata kanan */
+}
+
+.btn-card-berita a {
+    display: inline-block;
+    background-color: #0f172a;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-card-berita a:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
